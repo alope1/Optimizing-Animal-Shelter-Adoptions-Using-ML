@@ -1,11 +1,24 @@
 # Optimizing-Animal-Shelter-Adoptions-Using-ML
-## Animal Shelter Adoption Predictor
-### Project Overview
-This project focuses on using machine learning to predict if animals will be adopted within 30 days from a shelter. The goal is to help shelters manage their resources better and focus more on animals that need extra help finding homes.
+This repository contains a machine learning project focused on predicting outcomes for animals in the Austin Animal Center. The project evaluates several machine learning algorithms to determine which provides the best performance.
 
+## Exploratory Data Analysis
+The project starts with an exploration of three different datasets to evaluate their usefulness for the project. The datasets are examined based on factors like the number of rows and relevant features. The dataset from the Austin Animal Center is ultimately chosen due to its high number of records and relevant features.
 
-## Objective
-Our objective was to use predictive analytics to improve animal welfare by making shelters more efficient. Our model predicts adoption outcomes and highlights factors that affect these outcomes, helping shelters tailor their care and adoption plans.
+## Models and Methodology
+The project explores multiple machine learning algorithms, including:
 
-## Data
-We use intake and outcome data from a public animal shelter. The dataset includes details like animal type, condition at intake, age at intake, and other factors, all preprocessed and encoded for the model.
+• Random Forest Classifier
+
+• Gradient Boosting Classifier
+
+• Logistic Regression
+
+• Support Vector Machines
+
+Each model undergoes a building phase and an evaluation phase, with some models refined further by techniques like SMOTE to handle class imbalance. The Support Vector Machines model is built using a linear kernel and evaluated on multiple metrics.
+
+## Evaluation and Results
+The models are evaluated based on metrics like accuracy, precision, recall, F1 score, and ROC-AUC score. The project explores different strategies to improve model performance, such as removing less relevant classes or balancing the class distribution.
+
+## Conclusion
+The project concludes with a recommendation on which model is most effective for predicting outcomes for animals in the Austin Animal Center. The choice is made based on a combination of metrics and model performance.
